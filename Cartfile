@@ -1,0 +1,18 @@
+# Network
+github "Moya/Moya" ~> 14.0
+
+# Progress
+github "jdg/MBProgressHUD"
+
+# Image
+github "onevcat/Kingfisher" ~> 5.0
+
+# Rx
+github "ReactiveX/RxSwift" ~> 5.0
+github "RxSwiftCommunity/RxDataSources" ~> 4.0
+github "RxSwiftCommunity/NSObject-Rx"
+github "RxSwiftCommunity/RxGesture" ~> 3.0
+github "devxoul/RxViewController"
+github "RxSwiftCommunity/RxOptional" ~> 4.1.0
+github "evgeny-sureev/RxAlertController"
+github "RxSwiftCommunity/RxRealm"
