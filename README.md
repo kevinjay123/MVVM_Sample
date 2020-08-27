@@ -27,8 +27,9 @@ Using [The Cocktail DB](https://www.thecocktaildb.com) API
 4. build and run.
 
 ## Future work
-- [] List all ingredients with cocktail.
 
-- [] Search by categories, glasses, ingredients or alcoholic filters.
+- [ ] List all ingredients with cocktail.
 
-- [] Save favorite cocktails to local DB.
+- [ ] Search by categories, glasses, ingredients or alcoholic filters.
+
+- [ ] Save favorite cocktails to local DB.
