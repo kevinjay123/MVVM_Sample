@@ -1,9 +1,0 @@
-
-/* Class = "UILabel"; text = "Subtitle"; ObjectID = "SsC-Nf-3j7"; */
-"SsC-Nf-3j7.text" = "Subtitle";
-
-/* Class = "UILabel"; text = "Title"; ObjectID = "TGg-Wy-XUi"; */
-"TGg-Wy-XUi.text" = "Title";
-
-/* Class = "UITextField"; placeholder = "Cocktail name (eg: gin and tonic)"; ObjectID = "mal-hZ-Ens"; */
-"mal-hZ-Ens.placeholder" = "Cocktail name (eg: gin and tonic)";
