@@ -1,4 +1,4 @@
-# MVVM_Sample
+# MVVM Sample
 
 Sample for MVVM architecture
 
@@ -14,7 +14,7 @@ Using [The Cocktail DB](https://www.thecocktaildb.com) API
 ## Frameworks
 
 * [Moya](https://github.com/Moya/Moya)
-* [RxSwift](https://github.com/ReactiveX/RxSwift) - Include some related frameworks, like [RxDataSources](https://github.com/RxSwiftCommunity/RxDataSources), [RxOptional](https://github.com/RxSwiftCommunity/RxOptional), [RxViewController](https://github.com/devxoul/RxViewController), etc...
+* [RxSwift](https://github.com/ReactiveX/RxSwift) - Included some relate frameworks, like [RxDataSources](https://github.com/RxSwiftCommunity/RxDataSources), [RxOptional](https://github.com/RxSwiftCommunity/RxOptional), [RxViewController](https://github.com/devxoul/RxViewController), etc...
 * [Kingfisher](https://github.com/onevcat/Kingfisher)
 * [MBProgressHUD](https://github.com/jdg/MBProgressHUD)
 
@@ -27,13 +27,13 @@ Using [The Cocktail DB](https://www.thecocktaildb.com) API
 
 ## Building and Running
 
-1. install carthage package manager. you can found binary [here](https://github.com/Carthage/Carthage).
+1. Install carthage package manager. you can found binary [here](https://github.com/Carthage/Carthage).
 
-2. run command `carthage bootstrap --platform iOS` at `$(SRCROOT)` directory.
+2. Run command `carthage bootstrap --platform iOS` at `$(SRCROOT)` directory.
 
-3. open `Cocktail.xcodeproj`
+3. Open `Cocktail.xcodeproj`
 
-4. build and run.
+4. Build and run.
 
 ## Future Works
 
