@@ -12,7 +12,6 @@
 		2D18FE1A24F75B660095B80B /* NSViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D18FE1824F75B660095B80B /* NSViewController+Rx.swift */; };
 		2D18FE1B24F75B660095B80B /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D18FE1924F75B660095B80B /* UIViewController+Rx.swift */; };
 		2D18FE1D24F75BE90095B80B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D18FE1C24F75BE90095B80B /* Alert.swift */; };
-		2D18FE1F24F75C720095B80B /* Localizeble.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D18FE1E24F75C720095B80B /* Localizeble.strings */; };
 		2D18FE2124F75DB50095B80B /* MainSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D18FE2024F75DB50095B80B /* MainSectionModel.swift */; };
 		2D18FE2624F77B590095B80B /* CocktailDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D18FE2524F77B590095B80B /* CocktailDetailViewController.swift */; };
 		2D18FE2824F77BAB0095B80B /* CocktailDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D18FE2724F77BAB0095B80B /* CocktailDetailTableViewCell.swift */; };
@@ -20,6 +19,7 @@
 		2D18FE2D24F781680095B80B /* CocktailDetailSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D18FE2C24F781680095B80B /* CocktailDetailSectionModel.swift */; };
 		2D18FE2F24F783860095B80B /* CocktailDetailTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D18FE2E24F783860095B80B /* CocktailDetailTableViewCellViewModel.swift */; };
 		2D18FE3124F7852B0095B80B /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D18FE3024F7852B0095B80B /* Detail.storyboard */; };
+		2D18FE3524F78B340095B80B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D18FE3724F78B340095B80B /* Localizable.strings */; };
 		C22D36F124F6C5960086E689 /* RxViewController in Resources */ = {isa = PBXBuildFile; fileRef = C22D36F024F6C5960086E689 /* RxViewController */; };
 		C22D36F924F6CB8A0086E689 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22D36F824F6CB8A0086E689 /* Navigator.swift */; };
 		C22D36FC24F6CC0B0086E689 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22D36FB24F6CC0B0086E689 /* MainViewModel.swift */; };
@@ -57,7 +57,6 @@
 		2D18FE1824F75B660095B80B /* NSViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSViewController+Rx.swift"; sourceTree = "<group>"; };
 		2D18FE1924F75B660095B80B /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		2D18FE1C24F75BE90095B80B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		2D18FE1E24F75C720095B80B /* Localizeble.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizeble.strings; sourceTree = "<group>"; };
 		2D18FE2024F75DB50095B80B /* MainSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainSectionModel.swift; path = Cocktail/Main/MainSectionModel.swift; sourceTree = SOURCE_ROOT; };
 		2D18FE2524F77B590095B80B /* CocktailDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailViewController.swift; sourceTree = "<group>"; };
 		2D18FE2724F77BAB0095B80B /* CocktailDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -65,6 +64,9 @@
 		2D18FE2C24F781680095B80B /* CocktailDetailSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailSectionModel.swift; sourceTree = "<group>"; };
 		2D18FE2E24F783860095B80B /* CocktailDetailTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		2D18FE3024F7852B0095B80B /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		2D18FE3324F78ADE0095B80B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		2D18FE3424F78ADE0095B80B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2D18FE3624F78B340095B80B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C22D36F024F6C5960086E689 /* RxViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RxViewController; path = Carthage/Checkouts/RxViewController/Sources/RxViewController; sourceTree = "<group>"; };
 		C22D36F824F6CB8A0086E689 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		C22D36FB24F6CC0B0086E689 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -162,7 +164,7 @@
 				C2E5A1D024F6AFB30093AFC8 /* Assets.xcassets */,
 				C2E5A1D224F6AFB30093AFC8 /* LaunchScreen.storyboard */,
 				C2E5A1D524F6AFB30093AFC8 /* Info.plist */,
-				2D18FE1E24F75C720095B80B /* Localizeble.strings */,
+				2D18FE3724F78B340095B80B /* Localizable.strings */,
 			);
 			path = "Supported Files";
 			sourceTree = "<group>";
@@ -332,6 +334,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = C2E5A1BB24F6AFAE0093AFC8;
 			productRefGroup = C2E5A1C524F6AFAE0093AFC8 /* Products */;
@@ -351,7 +354,7 @@
 				C2E5A1D424F6AFB30093AFC8 /* LaunchScreen.storyboard in Resources */,
 				C22D36F124F6C5960086E689 /* RxViewController in Resources */,
 				C2E5A1D124F6AFB30093AFC8 /* Assets.xcassets in Resources */,
-				2D18FE1F24F75C720095B80B /* Localizeble.strings in Resources */,
+				2D18FE3524F78B340095B80B /* Localizable.strings in Resources */,
 				C2E5A1CF24F6AFAE0093AFC8 /* Main.storyboard in Resources */,
 				2D18FE3124F7852B0095B80B /* Detail.storyboard in Resources */,
 			);
@@ -443,10 +446,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2D18FE3724F78B340095B80B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D18FE3624F78B340095B80B /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		C2E5A1CD24F6AFAE0093AFC8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C2E5A1CE24F6AFAE0093AFC8 /* Base */,
+				2D18FE3324F78ADE0095B80B /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -455,6 +467,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C2E5A1D324F6AFB30093AFC8 /* Base */,
+				2D18FE3424F78ADE0095B80B /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -466,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -526,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
