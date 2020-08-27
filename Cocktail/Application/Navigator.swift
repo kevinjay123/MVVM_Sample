@@ -18,16 +18,33 @@ enum Scene: Hashable {
     // Main
     case main
 
+    // Detail
+    case detail(cocktail: Cocktail)
+
     var viewModel: BaseViewModel {
         switch self {
+        case .detail:
+            return CocktailDetailViewModel()
+
         default:
             return BaseViewModel()
         }
     }
 
+    var storyboardName: String {
+        switch self {
+        case .detail:
+            return "Detail"
+        default:
+            return ""
+        }
+
+    }
+
     var storyboardId: String {
         switch self {
-        
+        case .detail:
+            return "CocktailDetailViewController"
         default:
             return ""
         }
@@ -50,10 +67,20 @@ class Navigator {
     private func get(segue: Scene) -> UIViewController? {
 
         switch segue {
-        
+        case .detail(let cocktail):
+            if let vc = UIStoryboard(name: segue.storyboardName, bundle: nil).instantiateViewController(withIdentifier: segue.storyboardId) as? CocktailDetailViewController {
+                vc.navigator = self
+                vc.viewModel = segue.viewModel
+                vc.cocktail = cocktail
+
+                return vc
+            }
+
         default:
             return nil
         }
+
+        return nil
     }
 
     func pop(sender: UIViewController?, toRoot: Bool = false) {
@@ -65,8 +92,6 @@ class Navigator {
     }
 
     func dismiss(sender: UIViewController?) {
-
-        
         sender?.navigationController?.dismiss(animated: true, completion: nil)
     }
 

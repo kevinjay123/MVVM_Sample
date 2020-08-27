@@ -16,7 +16,7 @@ import RxMoya
 struct Network {
     private static let disposeBag = DisposeBag()
 
-    static func request<Element: Codable>(by config: Config) -> Single<Element> {
+    static private func request<Element: Codable>(by config: Config) -> Single<Element> {
         return Single.create { (single) -> Disposable in
             let provider = MoyaProvider<Config>()
             provider.request(config) { (result) in
@@ -43,5 +43,9 @@ struct Network {
 extension Network {
     static func search(by keyword: String) -> Single<Drinks> {
         return request(by: Config.search(keyword: keyword))
+    }
+
+    static func fetchDetail(by id: String) -> Single<Drinks> {
+        return request(by: Config.detail(id: id))
     }
 }

@@ -11,6 +11,7 @@ import Moya
 
 enum Config {
     case search(keyword: String)
+    case detail(id: String)
 }
 
 extension Config: TargetType {
@@ -30,6 +31,8 @@ extension Config: TargetType {
         switch self {
         case .search:
             return "/search.php"
+        case .detail:
+            return "/lookup.php"
         }
     }
     
@@ -39,6 +42,10 @@ extension Config: TargetType {
         switch self {
         case .search(let keyword):
             params["s"] = keyword
+            return params
+
+        case .detail(let id):
+            params["i"] = id
             return params
         }
     }

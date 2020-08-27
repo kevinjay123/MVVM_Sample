@@ -16,7 +16,7 @@ struct Drinks: Codable {
     }
 }
 
-struct Cocktail: Codable {
+struct Cocktail: Codable, Equatable, Hashable {
 
     var id: String
     var name: String
