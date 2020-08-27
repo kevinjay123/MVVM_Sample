@@ -10,12 +10,12 @@ import Foundation
 import Moya
 
 enum Config {
-    case search
+    case search(keyword: String)
 }
 
 extension Config: TargetType {
     var baseURL: URL {
-        return URL(string: "https://www.thecocktaildb.com/api/json/v1/1/search.php")!
+        return URL(string: "https://www.thecocktaildb.com/api/json/v1/1")!
     }
     
     var headers: [String : String]? {
@@ -29,12 +29,18 @@ extension Config: TargetType {
     var path: String {
         switch self {
         case .search:
-            return "s"
+            return "/search.php"
         }
     }
     
     var parameters: [String: Any]? {
-       return nil
+        var params: [String : Any] = [:]
+
+        switch self {
+        case .search(let keyword):
+            params["s"] = keyword
+            return params
+        }
     }
         
     var parameterEncoding: ParameterEncoding {
