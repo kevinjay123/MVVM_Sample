@@ -22,6 +22,7 @@ class MainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        resultTableView.rx.setDelegate(self).disposed(by: rx.disposeBag)
     }
 
     override func setUI() {
@@ -31,6 +32,7 @@ class MainViewController: BaseViewController {
     override func bindViewModel() {
         super.bindViewModel()
 
+        navigator = Navigator.default
         viewModel = MainViewModel()
 
         guard let viewModel = viewModel as? MainViewModel else { return }
@@ -46,9 +48,15 @@ class MainViewController: BaseViewController {
         output.buttonEnabled.bind(to: clearTextButton.rx.isEnabled).disposed(by: rx.disposeBag)
         output.sectionModels.bind(to: resultTableView.rx.items(dataSource: cocktailDataSource())).disposed(by: rx.disposeBag)
 
-        resultTableView.rx.itemSelected.subscribe(onNext: { [weak self](indexPath) in
-            self?.resultTableView.deselectRow(at: indexPath, animated: true)
-        }).disposed(by: rx.disposeBag)
+        Observable
+            .zip(resultTableView.rx.itemSelected, resultTableView.rx.modelSelected(MainSectionItem.self))
+            .bind { [weak self](indexPath, model) in
+                if let cocktail = model.cocktail {
+                    self?.navigator.show(segue: .detail(cocktail: cocktail), sender: self, transition: .modal(isFullScreen: false))
+                }
+                self?.resultTableView.deselectRow(at: indexPath, animated: true)
+            }
+            .disposed(by: rx.disposeBag)
 
         clearTextButton.rx.tap
             .subscribe(onNext: { () in
@@ -75,6 +83,12 @@ class MainViewController: BaseViewController {
 
             return cell
         })
+    }
+}
+
+extension MainViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
     }
 }
 

@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cocktail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Pb-LO-FIU">
-                                <rect key="frame" x="16" y="424" width="382" height="48"/>
+                                <rect key="frame" x="137.5" y="424" width="139.5" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="NdD-Wy-gON"/>
                                 </constraints>
@@ -28,9 +28,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="0Pb-LO-FIU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7X0-iS-pu9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Pb-LO-FIU" secondAttribute="trailing" constant="16" id="Fbs-rc-fMa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0Pb-LO-FIU" secondAttribute="trailing" constant="16" id="Fbs-rc-fMa"/>
                             <constraint firstItem="0Pb-LO-FIU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SEf-dJ-EX9"/>
-                            <constraint firstItem="0Pb-LO-FIU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UnX-BL-U8p"/>
+                            <constraint firstItem="0Pb-LO-FIU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UnX-BL-U8p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

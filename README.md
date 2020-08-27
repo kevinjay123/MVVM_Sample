@@ -1,3 +1,9 @@
+# MVVM_Sample
+
+Sample for MVVM architecture
+
+Using [The Cocktail DB](https://www.thecocktaildb.com) API
+
 ## Technologies
 
 - [x] Clean architecture ([RxSwift](https://github.com/ReactiveX/RxSwift) and MVVM)
