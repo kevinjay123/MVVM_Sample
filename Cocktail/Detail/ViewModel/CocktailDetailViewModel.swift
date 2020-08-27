@@ -12,6 +12,7 @@ import RxCocoa
 import RxDataSources
 
 class CocktailDetailViewModel: BaseViewModel, ViewModelType {
+    
     struct Input {
         let trigger: Observable<Void>
         let cocktail: Cocktail

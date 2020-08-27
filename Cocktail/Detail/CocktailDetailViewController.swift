@@ -52,7 +52,9 @@ class CocktailDetailViewController: BaseViewController {
     }
 
     private func detailDataSource() -> RxTableViewSectionedAnimatedDataSource<CocktailDetailSectionModel> {
-        return RxTableViewSectionedAnimatedDataSource<CocktailDetailSectionModel>(animationConfiguration: AnimationConfiguration(insertAnimation: .fade, reloadAnimation: .fade, deleteAnimation: .fade), configureCell: { (dataSource, tableView, indexPath, model) -> UITableViewCell in
+        return RxTableViewSectionedAnimatedDataSource<CocktailDetailSectionModel>(
+            animationConfiguration: AnimationConfiguration(insertAnimation: .fade, reloadAnimation: .fade, deleteAnimation: .fade),
+            configureCell: { (dataSource, tableView, indexPath, model) -> UITableViewCell in
 
             let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath) as! CocktailDetailTableViewCell
             if let cocktail = model.cocktail {

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2D18FE1424F757A80095B80B /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D18FE1324F757A80095B80B /* Cocktail.swift */; };
-		2D18FE1624F759210095B80B /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D18FE1524F759210095B80B /* APIResponse.swift */; };
 		2D18FE1A24F75B660095B80B /* NSViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D18FE1824F75B660095B80B /* NSViewController+Rx.swift */; };
 		2D18FE1B24F75B660095B80B /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D18FE1924F75B660095B80B /* UIViewController+Rx.swift */; };
 		2D18FE1D24F75BE90095B80B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D18FE1C24F75BE90095B80B /* Alert.swift */; };
@@ -53,7 +52,6 @@
 
 /* Begin PBXFileReference section */
 		2D18FE1324F757A80095B80B /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
-		2D18FE1524F759210095B80B /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		2D18FE1824F75B660095B80B /* NSViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSViewController+Rx.swift"; sourceTree = "<group>"; };
 		2D18FE1924F75B660095B80B /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		2D18FE1C24F75BE90095B80B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 			children = (
 				C22D370B24F6CEF80086E689 /* Config.swift */,
 				C22D370D24F6CF040086E689 /* Network.swift */,
-				2D18FE1524F759210095B80B /* APIResponse.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -429,7 +426,6 @@
 				2D18FE2124F75DB50095B80B /* MainSectionModel.swift in Sources */,
 				C22D370C24F6CEF80086E689 /* Config.swift in Sources */,
 				2D18FE1424F757A80095B80B /* Cocktail.swift in Sources */,
-				2D18FE1624F759210095B80B /* APIResponse.swift in Sources */,
 				2D18FE2F24F783860095B80B /* CocktailDetailTableViewCellViewModel.swift in Sources */,
 				C22D370624F6CCAF0086E689 /* Observable+Operators.swift in Sources */,
 				2D18FE2624F77B590095B80B /* CocktailDetailViewController.swift in Sources */,

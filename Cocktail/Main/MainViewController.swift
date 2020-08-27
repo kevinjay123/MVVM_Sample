@@ -49,7 +49,8 @@ class MainViewController: BaseViewController {
         output.sectionModels.bind(to: resultTableView.rx.items(dataSource: cocktailDataSource())).disposed(by: rx.disposeBag)
 
         Observable
-            .zip(resultTableView.rx.itemSelected, resultTableView.rx.modelSelected(MainSectionItem.self))
+            .zip(resultTableView.rx.itemSelected,
+                 resultTableView.rx.modelSelected(MainSectionItem.self))
             .bind { [weak self](indexPath, model) in
                 if let cocktail = model.cocktail {
                     self?.navigator.show(segue: .detail(cocktail: cocktail), sender: self, transition: .modal(isFullScreen: false))
@@ -74,10 +75,11 @@ class MainViewController: BaseViewController {
     }
 
     private func cocktailDataSource() -> RxTableViewSectionedAnimatedDataSource<MainSectionModel> {
-        return RxTableViewSectionedAnimatedDataSource<MainSectionModel>(animationConfiguration: AnimationConfiguration(insertAnimation: .fade, reloadAnimation: .fade, deleteAnimation: .fade), configureCell: { (dataSource, tableView, indexPath, model) -> UITableViewCell in
+        return RxTableViewSectionedAnimatedDataSource<MainSectionModel>(
+            animationConfiguration: AnimationConfiguration(insertAnimation: .fade, reloadAnimation: .fade, deleteAnimation: .fade),
+            configureCell: { (dataSource, tableView, indexPath, model) -> UITableViewCell in
 
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
             cell.textLabel?.text = model.cocktail?.name
             cell.detailTextLabel?.text = model.cocktail?.category
 

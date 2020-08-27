@@ -11,6 +11,7 @@ import RxSwift
 import RxCocoa
 
 class MainViewModel: BaseViewModel, ViewModelType {
+    
     struct Input {
         let trigger: Observable<Void>
     }
