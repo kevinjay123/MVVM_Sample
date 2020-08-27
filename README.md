@@ -18,10 +18,17 @@ Using [The Cocktail DB](https://www.thecocktaildb.com) API
 
 ## Building and Running
 
-1. install carthage package manager. you can found binary [here](https://github.com/Carthage/Carthage)
+1. install carthage package manager. you can found binary [here](https://github.com/Carthage/Carthage).
 
 2. run command `carthage bootstrap --platform iOS` at `$(SRCROOT)` directory.
 
 3. open `Cocktail.xcodeproj`
 
-4. build and run
+4. build and run.
+
+## Future work
+- [] List all ingredients with cocktail.
+
+- [] Search by categories, glasses, ingredients or alcoholic filters.
+
+- [] Save favorite cocktails to local DB.
