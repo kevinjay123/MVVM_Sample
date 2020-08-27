@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxDataSources
 
 class MainViewController: BaseViewController {
 
@@ -37,10 +38,23 @@ class MainViewController: BaseViewController {
         viewModel.loading.asObservable().bind(to: self.isLoading).disposed(by: rx.disposeBag)
         viewModel.parsedError.asObservable().bind(to: self.error).disposed(by: rx.disposeBag)
 
+        let _ = searchTextField.rx.textInput <-> viewModel.searchText
+
         let input = MainViewModel.Input(trigger: rx.viewWillAppear.mapToVoid())
         let output = viewModel.transform(input: input)
 
-        let _ = searchTextField.rx.textInput <-> viewModel.searchText
+        output.buttonEnabled.bind(to: clearTextButton.rx.isEnabled).disposed(by: rx.disposeBag)
+        output.sectionModels.bind(to: resultTableView.rx.items(dataSource: cocktailDataSource())).disposed(by: rx.disposeBag)
+
+        resultTableView.rx.itemSelected.subscribe(onNext: { [weak self](indexPath) in
+            self?.resultTableView.deselectRow(at: indexPath, animated: true)
+        }).disposed(by: rx.disposeBag)
+
+        clearTextButton.rx.tap
+            .subscribe(onNext: { () in
+                viewModel.searchText.accept("")
+            })
+            .disposed(by: rx.disposeBag)
 
         isLoading.asDriver().drive(onNext: { [weak self] (isLoading) in
             isLoading ? self?.showHUD() : self?.dismissHUD(isAnimated: false)
@@ -49,6 +63,18 @@ class MainViewController: BaseViewController {
         error.subscribe(onNext: { [weak self] error in
             self?.present(alert(error: error), animated: true, completion: nil)
         }).disposed(by: rx.disposeBag)
+    }
+
+    private func cocktailDataSource() -> RxTableViewSectionedAnimatedDataSource<MainSectionModel> {
+        return RxTableViewSectionedAnimatedDataSource<MainSectionModel>(animationConfiguration: AnimationConfiguration(insertAnimation: .fade, reloadAnimation: .fade, deleteAnimation: .fade), configureCell: { (dataSource, tableView, indexPath, model) -> UITableViewCell in
+
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+
+            cell.textLabel?.text = model.cocktail?.name
+            cell.detailTextLabel?.text = model.cocktail?.category
+
+            return cell
+        })
     }
 }
 
