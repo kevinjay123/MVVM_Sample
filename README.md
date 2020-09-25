@@ -10,6 +10,7 @@ Using [The Cocktail DB](https://www.thecocktaildb.com) API
 - [x] Flow coordinators ([Realm demo](https://github.com/realm/EventKit/blob/master/iOS/EventBlank2-iOS/Services/Navigator.swift))
 - [x] REST API v3 (for unauthenticated or basic authentication) ([Moya](https://github.com/Moya/Moya) and Codable)
 - [x] Git Flow
+- [x] Unit Test for viewModel
 
 ## Frameworks
 
@@ -17,6 +18,8 @@ Using [The Cocktail DB](https://www.thecocktaildb.com) API
 * [RxSwift](https://github.com/ReactiveX/RxSwift) - Included some relate frameworks, like [RxDataSources](https://github.com/RxSwiftCommunity/RxDataSources), [RxOptional](https://github.com/RxSwiftCommunity/RxOptional), [RxViewController](https://github.com/devxoul/RxViewController), etc...
 * [Kingfisher](https://github.com/onevcat/Kingfisher)
 * [MBProgressHUD](https://github.com/jdg/MBProgressHUD)
+* [Quick](https://github.com/Quick/Quick)
+* [Nimble](https://github.com/Quick/Nimble)
 
 ## Tools
 
