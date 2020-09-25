@@ -7,6 +7,10 @@ github "jdg/MBProgressHUD"
 # Image
 github "onevcat/Kingfisher" ~> 5.0
 
+# Test
+github "Quick/Quick"
+github "Quick/Nimble"
+
 # Rx
 github "ReactiveX/RxSwift" ~> 5.0
 github "RxSwiftCommunity/RxDataSources" ~> 4.0
